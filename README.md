@@ -26,5 +26,5 @@ The code processes the data in the following order:
 
 * Rename the column names to follow the variable naming conventions specified in the video lectures
 
-* Output the results
+* Output the results (Note: the output path needs to be changed to a local directory in order to output correctly)
 
