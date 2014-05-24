@@ -2,8 +2,6 @@
 # 23/05/2014
 # Note: Please ensure that the datasets are contained in the current working directory
 
-setwd("C:/Users/user/Dropbox/Private/Study/Coursera/Getting and Cleaning Data/Course Project/UCI HAR Dataset")
-
 # Read data from the features and activity labels dataset
 features <- read.table("features.txt")
 activityLabels  <- read.table("activity_labels.txt")
