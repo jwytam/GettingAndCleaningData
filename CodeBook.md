@@ -35,78 +35,83 @@ As a result, the output consists of 180 observations of 68 variables.
 
 ### Output Variables
 
-The following are the resultant variables that can be found in the output.
+The variable names have been cleaned up compared to the original source file to be more informative and follows the guidelines set out by the Coursera course 'Getting and Cleaning Data'. However, due to the possible length of the column names some shorthand has been kept, for example:
 
-Note: The variable names have been cleaned up compared to the original source file to be more informative and follows the guidelines set out by the Coursera course 'Getting and Cleaning Data':
+* acc = accelerometer
+* gyro = gyroscope
+* mag = magnitude
+
+The following are the resultant variables that can be found in the output (apart from activity and subjectid, all variables are continuous):
 
 * activity
 * subjectid
-* timebodyaccelerometermeanx
-* timebodyaccelerometermeany
-* timebodyaccelerometermeanz
-* timebodyaccelerometerstandarddeviationx
-* timebodyaccelerometerstandarddeviationy
-* timebodyaccelerometerstandarddeviationz
-* timegravityaccelerometermeanx
-* timegravityaccelerometermeany
-* timegravityaccelerometermeanz
-* timegravityaccelerometerstandarddeviationx
-* timegravityaccelerometerstandarddeviationy
-* timegravityaccelerometerstandarddeviationz
-* timebodyaccelerometerjerkmeanx
-* timebodyaccelerometerjerkmeany
-* timebodyaccelerometerjerkmeanz
-* timebodyaccelerometerjerkstandarddeviationx
-* timebodyaccelerometerjerkstandarddeviationy
-* timebodyaccelerometerjerkstandarddeviationz
-* timebodygyroscopemeanx
-* timebodygyroscopemeany
-* timebodygyroscopemeanz
-* timebodygyroscopestandarddeviationx
-* timebodygyroscopestandarddeviationy
-* timebodygyroscopestandarddeviationz
-* timebodygyroscopejerkmeanx
-* timebodygyroscopejerkmeany
-* timebodygyroscopejerkmeanz
-* timebodygyroscopejerkstandarddeviationx
-* timebodygyroscopejerkstandarddeviationy
-* timebodygyroscopejerkstandarddeviationz
-* timebodyaccelerometermagnitudemean
-* timebodyaccelerometermagnitudestandarddeviation
-* timegravityaccelerometermagnitudemean
-* timegravityaccelerometermagnitudestandarddeviation
-* timebodyaccelerometerjerkmagnitudemean
-* timebodyaccelerometerjerkmagnitudestandarddeviation
-* timebodygyroscopemagnitudemean
-* timebodygyroscopemagnitudestandarddeviation
-* timebodygyroscopejerkmagnitudemean
-* timebodygyroscopejerkmagnitudestandarddeviation
-* frequencybodyaccelerometermeanx
-* frequencybodyaccelerometermeany
-* frequencybodyaccelerometermeanz
-* frequencybodyaccelerometerstandarddeviationx
-* frequencybodyaccelerometerstandarddeviationy
-* frequencybodyaccelerometerstandarddeviationz
-* frequencybodyaccelerometerjerkmeanx
-* frequencybodyaccelerometerjerkmeany
-* frequencybodyaccelerometerjerkmeanz
-* frequencybodyaccelerometerjerkstandarddeviationx
-* frequencybodyaccelerometerjerkstandarddeviationy
-* frequencybodyaccelerometerjerkstandarddeviationz
-* frequencybodygyroscopemeanx
-* frequencybodygyroscopemeany
-* frequencybodygyroscopemeanz
-* frequencybodygyroscopestandarddeviationx
-* frequencybodygyroscopestandarddeviationy
-* frequencybodygyroscopestandarddeviationz
-* frequencybodyaccelerometermagnitudemean
-* frequencybodyaccelerometermagnitudestandarddeviation
-* frequencybodyaccelerometerjerkmagnitudemean
-* frequencybodyaccelerometerjerkmagnitudestandarddeviation
-* frequencybodygyroscopemagnitudemean
-* frequencybodygyroscopemagnitudestandarddeviation
-* frequencybodygyroscopejerkmagnitudemean
-* frequencybodygyroscopejerkmagnitudestandarddeviation
+* timebodyaccmeanx
+* timebodyaccmeany
+* timebodyaccmeanz
+* timebodyaccstdx
+* timebodyaccstdy
+* timebodyaccstdz
+* timegravityaccmeanx
+* timegravityaccmeany
+* timegravityaccmeanz
+* timegravityaccstdx
+* timegravityaccstdy
+* timegravityaccstdz
+* timebodyaccjerkmeanx
+* timebodyaccjerkmeany
+* timebodyaccjerkmeanz
+* timebodyaccjerkstdx
+* timebodyaccjerkstdy
+* timebodyaccjerkstdz
+* timebodygyromeanx
+* timebodygyromeany
+* timebodygyromeanz
+* timebodygyrostdx
+* timebodygyrostdy
+* timebodygyrostdz
+* timebodygyrojerkmeanx
+* timebodygyrojerkmeany
+* timebodygyrojerkmeanz
+* timebodygyrojerkstdx
+* timebodygyrojerkstdy
+* timebodygyrojerkstdz
+* timebodyaccmagmean
+* timebodyaccmagstd
+* timegravityaccmagmean
+* timegravityaccmagstd
+* timebodyaccjerkmagmean
+* timebodyaccjerkmagstd
+* timebodygyromagmean
+* timebodygyromagstd
+* timebodygyrojerkmagmean
+* timebodygyrojerkmagstd
+* frequencybodyaccmeanx
+* frequencybodyaccmeany
+* frequencybodyaccmeanz
+* frequencybodyaccstdx
+* frequencybodyaccstdy
+* frequencybodyaccstdz
+* frequencybodyaccjerkmeanx
+* frequencybodyaccjerkmeany
+* frequencybodyaccjerkmeanz
+* frequencybodyaccjerkstdx
+* frequencybodyaccjerkstdy
+* frequencybodyaccjerkstdz
+* frequencybodygyromeanx
+* frequencybodygyromeany
+* frequencybodygyromeanz
+* frequencybodygyrostdx
+* frequencybodygyrostdy
+* frequencybodygyrostdz
+* frequencybodyaccmagmean
+* frequencybodyaccmagstd
+* frequencybodyaccjerkmagmean
+* frequencybodyaccjerkmagstd
+* frequencybodygyromagmean
+* frequencybodygyromagstd
+* frequencybodygyrojerkmagmean
+* frequencybodygyrojerkmagstd
+
 
 ### Additional Information
 

@@ -60,10 +60,6 @@ colnames(result) <- tolower(colnames(result))
 colnames(result) <- gsub(pattern="^t", x=colnames(result), replacement="time")
 colnames(result) <- gsub(pattern="^f", x=colnames(result), replacement="frequency")
 colnames(result) <- gsub(pattern="bodybody", x=colnames(result), replacement="body")
-colnames(result) <- gsub(pattern="acc", x=colnames(result), replacement="accelerometer")
-colnames(result) <- gsub(pattern="gyro", x=colnames(result), replacement="gyroscope")
-colnames(result) <- gsub(pattern="std", x=colnames(result), replacement="standarddeviation")
-colnames(result) <- gsub(pattern="mag", x=colnames(result), replacement="magnitude")
 
 # Output the data file
 write.table(result, "C:/Users/user/Desktop/tidy_data.txt", sep="\t")
