@@ -41,7 +41,7 @@ The variable names have been cleaned up compared to the original source file to 
 * gyro = gyroscope
 * mag = magnitude
 
-The following are the resultant variables that can be found in the output (apart from activity and subjectid, all variables are continuous):
+The following are the resultant variables that can be found in the output and their definitions follow the initial ones described in the section, 'Initial Feature Selection':
 
 * activity
 * subjectid
@@ -112,6 +112,7 @@ The following are the resultant variables that can be found in the output (apart
 * frequencybodygyrojerkmagmean
 * frequencybodygyrojerkmagstd
 
+All variables aside from subjectid and activity are continuous.
 
 ### Additional Information
 
