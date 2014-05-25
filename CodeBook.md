@@ -2,7 +2,7 @@
 
 This CodeBook describes the variables and any transformations used to create the output produced by the script run_analysis.R
 
-# Initial Feature Selection
+### Initial Feature Selection
 
 The original source file identified a number of features for analysis, it is described as follows:
 
@@ -15,7 +15,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions."
 
-# Modifications and Transformations
+### Modifications and Transformations
 
 Based off the original data sources, a number of changes were made. The training and testing datasets were combined and two columns were added to the data to allow for the identification of the subject as well as the activity being performed.
 
@@ -33,7 +33,7 @@ The resultant dataset was stripped down in order to only look at features relati
 
 As a result, the output consists of 180 observations of 68 variables.
 
-# Output Variables
+### Output Variables
 
 The following are the resultant variables that can be found in the output.
 
@@ -108,8 +108,8 @@ Note: The variable names have been cleaned up compared to the original source fi
 * frequencybodygyroscopejerkmagnitudemean
 * frequencybodygyroscopejerkmagnitudestandarddeviation
 
-# Additional Information
+### Additional Information
 
-For more information about the data please visit the <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">Human Activity Recognition Using Smartphones Data Set website</a>.
+For more information about the data please visit the <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">Human Activity Recognition Using Smartphones Data Set</a> website.
 
 To understand the run_analysis.R script in more detail, please read the README.md file in the repository.
