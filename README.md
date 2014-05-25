@@ -1,13 +1,13 @@
 ## Getting and Cleaning Data (Course Project 1)
 
-The purpose of this project is to create a tidy dataset based off the dataset, "Human Activity Recognition Using Smartphones" (more information can be found <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">here</a>.
+The purpose of this project is to create a tidy dataset based off the dataset, "Human Activity Recognition Using Smartphones" (more information can be found <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">here</a>).
 
 This repository contains three files:
 * README.md: Provides a brief overview
 * CodeBook.md: Provides a description of the variables and the transformations used to produce the output
 * run_analysis.R: An R script that loads the UCI HAR dataset, processes the file to create a tidy dataset and outputs the results to a text file. Further details about this script can be found below:
 
-# run_analysis.R
+### run_analysis.R
 
 In order to run the script, please ensure that the current working directory is set to the location of the source files (i.e. the folder that holds the UCI HAR Dataset).
 
