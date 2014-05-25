@@ -40,14 +40,14 @@ test <- merge(test, activityLabels, by.y="V1", all.x=TRUE)
 ds <- rbind(train, test)
 
 # Only retrieve the required columns
-ds <- ds[, c(2:565)]
-colnames(ds)[564] <- "activityDescription"
+ds <- ds[, c(2:564)]
+colnames(ds)[563] <- "activityDescription"
 
-# Find the columns related to mean (including mean frequency), standard deviation, subject and activity
-newDs <- ds[, grepl("mean()", colnames(ds)) == "TRUE" | grepl("std()", colnames(ds)) == "TRUE" | grepl("activityDescription", colnames(ds)) == "TRUE" | grepl("subject", colnames(ds)) == "TRUE"]
+# Find the columns related to mean (excluding mean frequency), standard deviation, subject and activity
+newDs <- ds[, grepl("mean()", colnames(ds), fixed=TRUE) == "TRUE" | grepl("std()", colnames(ds)) == "TRUE" | grepl("activityDescription", colnames(ds)) == "TRUE" | grepl("subject", colnames(ds)) == "TRUE"]
 
 # Find the average of all columns grouped by subject and activity
-result <- aggregate(newDs[,1:79],by=list(newDs$activity, newDs$subject), mean)
+result <- aggregate(newDs[,1:66],by=list(newDs$activity, newDs$subject), mean)
 
 # Rename grouping columns
 colnames(result)[1] <- "activity"
@@ -55,8 +55,7 @@ colnames(result)[2]  <- "subjectid"
 
 # Clean column names
 colnames(result) <- gsub(pattern="\\(\\)", x=colnames(result), replacement="")
-colnames(result)  <- gsub(pattern="-", x=colnames(result), replacement="")
-colnames(result) <- gsub(pattern="Freq", x=colnames(result), replacement="frequency")
+colnames(result) <- gsub(pattern="-", x=colnames(result), replacement="")
 colnames(result) <- tolower(colnames(result))
 colnames(result) <- gsub(pattern="^t", x=colnames(result), replacement="time")
 colnames(result) <- gsub(pattern="^f", x=colnames(result), replacement="frequency")
@@ -64,6 +63,7 @@ colnames(result) <- gsub(pattern="bodybody", x=colnames(result), replacement="bo
 colnames(result) <- gsub(pattern="acc", x=colnames(result), replacement="accelerometer")
 colnames(result) <- gsub(pattern="gyro", x=colnames(result), replacement="gyroscope")
 colnames(result) <- gsub(pattern="std", x=colnames(result), replacement="standarddeviation")
+colnames(result) <- gsub(pattern="mag", x=colnames(result), replacement="magnitude")
 
 # Output the data file
 write.table(result, "C:/Users/user/Desktop/tidy_data.txt", sep="\t")
